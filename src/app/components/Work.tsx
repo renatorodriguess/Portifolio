@@ -1,13 +1,14 @@
 import WorkImg from '../assets/workImg.jpeg'
 import realEstate from '../assets/realestate.jpg'
 
+
 const Work = () => {
-    return (
-        <div id="work" className='mt-[-10%] w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+  return (
+    <div id="work" className='mt-[-10%] w-full md:h-screen text-gray-300 bg-[#0a192f]'>
         <div className='max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-5xl font-bold inline border-b-4 border-pink-600 text-gray-300'>Projetos</p>
-                <p className='py-6 text-[19px]'>// Olhe alguns dos meus projetos.</p>
+                <p className='py-6 text-[19px]'>/ Olhe alguns dos meus projetos.</p>
             </div>
 
             {/* Container */}
@@ -80,7 +81,7 @@ const Work = () => {
             </div>
         </div>
     </div>
-    )
+  )
 }
 
-export default Work;
+export default Work

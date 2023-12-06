@@ -6,7 +6,7 @@ const Contact = () => {
             <p className="text-5xl font-bold inline border-b-4 border-pink-600 text-gray-300">
               Contato
             </p>
-            <p className="text-gray-300 text-[19px] py-4"><span>// </span>Me mande um e-mail</p>
+            <p className="text-gray-300 text-[19px] py-4"><span>/ </span>Me mande um e-mail</p>
           </div>
   
           <input type="hidden" name="accessKey" value={"513d613e-07c2-4e7c-9828-e597b8914680"}></input>
@@ -41,7 +41,8 @@ const Contact = () => {
             type="submit"
             className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex item-center"
           >
-            Vamos Colaborar !!!
+            
+            Enviar
           </button>
         </form>
       </div>
