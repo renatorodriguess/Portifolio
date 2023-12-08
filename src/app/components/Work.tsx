@@ -1,7 +1,3 @@
-import WorkImg from '../assets/workImg.jpeg'
-import realEstate from '../assets/realestate.jpg'
-
-
 const Work = () => {
   return (
     <div id="work" className='mt-[-10%] w-full md:h-screen text-gray-300 bg-[#0a192f]'>
@@ -15,7 +11,7 @@ const Work = () => {
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
                 {/* Grid Item */}
-                <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group container relative rounded-md flex justify-center mx-auto text-center items-center content-div'>
+                <div className=' bg-hero-pattern shadow-lg shadow-[#040c16] group container relative rounded-md flex justify-center mx-auto text-center items-center content-div'>
 
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100 transition duration-400 ease-in-out'>
@@ -23,7 +19,7 @@ const Work = () => {
                             React JS Application
                         </span>
                         <div className='pt-8 text-center'> 
-                            <a href="" target='_blank'>
+                            <a href="https://nextjs-dashboard-zeta-snowy.vercel.app" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white hover:bg-slate-300 text-gray-800 hover:text-black font-bold text-lg'>Abrir Projeto</button>
                             </a>
                             <a href="" target='_blank'>
@@ -36,7 +32,7 @@ const Work = () => {
                     </div>
                 </div>
                 
-                <div style={{backgroundImage: `url(${realEstate})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div '>
+                <div className='bg-second-pattern shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div '>
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
@@ -56,12 +52,12 @@ const Work = () => {
                     </div>
                     
                 </div>
-                <div style={{backgroundImage: `url(${WorkImg})`}} className='shadow-lg shadow-[#040c16] group text-center container rounded-md flex justify-center mx-auto items-center content-div'>
+                <div className='bg-third-pattern shadow-lg shadow-[#040c16] group text-center container rounded-md flex justify-center mx-auto items-center content-div'>
 
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            Instasany
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="" target='_blank'>

@@ -1,3 +1,6 @@
+import WorkImg from '../assets/workImg.jpeg'
+
+
 const About = () => {
     return (
         <div id='about' className='mt-[-10%] w-full h-screen bg-[#0a192f] text-gray-300'>
@@ -5,21 +8,17 @@ const About = () => {
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
             <p className='text-5xl font-bold inline border-b-4 border-pink-600'>
-              Sobre
+              Sobre Mim
             </p>
           </div>
           <div></div>
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-4xl font-bold'>
+            <div  className='sm:text-right text-4xl font-bold'>
               <p>Olá. Sou Renato Rodrigues prazer me conhecê-lo. Dê uma olhada em volta.</p>
             </div>
-            <div>
-              <p>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
+            <div> 
+              <p>Desde a infância, minha paixão pela tecnologia foi alimentada pelos jogos, despertando muita curiosidade em saber como funcionavam. Essa fascinação guiou minha decisão de seguir o caminho da tecnologia, com especial interesse pela programação. Na qual, encontrei não apenas uma habilidade técnica, mas uma linguagens pela qual eu poderia dar vida às minhas ideias e solucionar desafios complexos. Hoje, cada linha de código representa não apenas um comando, mas uma expressão do meu entusiasmo em contribuir para o avanço constante do mundo digital.</p>  
             </div>
           </div>
       </div>

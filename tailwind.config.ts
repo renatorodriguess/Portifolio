@@ -7,7 +7,13 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('assets/exemplo.png')",
+        'second-pattern': "url('assets/realestate.jpg')",
+        'third-pattern': "url('assets/Instasany.png')",
+      }
+    },
   },
   plugins: [],
 }
