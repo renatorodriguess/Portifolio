@@ -9,7 +9,7 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: 'Portifolio / Renato',
+  title: 'Portifolio | Renato',
   description: 'Renato Portifolio',
 }
 
@@ -20,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={raleway.className}>{children}</body>
     </html>
-  )
+  );
 }
