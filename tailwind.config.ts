@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('assets/exemplo.png')",
-        'second-pattern': "url('assets/realestate.jpg')",
-        'third-pattern': "url('assets/Instasany.png')",
+        'first-image': "url('assets/Instasany.png')" ,
+        'second-image': "url('assets/realestate.jpg')",
+        'third-image': "url('assets/DevBooks.png')",
       }
     },
   },

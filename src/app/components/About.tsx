@@ -1,4 +1,3 @@
-import WorkImg from '../assets/workImg.jpeg'
 
 
 const About = () => {
