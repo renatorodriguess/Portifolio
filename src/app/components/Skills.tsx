@@ -9,6 +9,7 @@ import CSSImg from '../assets/css.png'
 import NextImg from '../assets/nextjs.png'
 import NodeImg from '../assets/nodejs.png'
 import JestImg from '../assets/jest.png'
+import TypescriptImg from '../assets/typescript.png'
 
 
 const Skills = () => {
@@ -29,7 +30,7 @@ const Skills = () => {
               <p className='my-4'>CSS</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-              <Image className='w-20 mx-auto' src={JavaScriptImg} alt='JAVASCRIPT Icon' />
+              <Image className='w-20 mx-auto' src={TypescriptImg} alt='JAVASCRIPT Icon' />
               <p className='my-4'>JAVASCRIPT</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>

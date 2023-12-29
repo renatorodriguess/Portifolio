@@ -29,7 +29,7 @@ const Work = () => {
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-800 font-bold text-lg hover:text-black hover:bg-slate-300'>Repositório</button>
                             </a>
                         </div>
-                        <div className='absolute mt-4 ml-9'>
+                        <div className='absolute mt-4 ml-5'>
                             <span className='text-pink-600 font-extrabold '>React, Node, Next e Tailwind</span>
                         </div>
                     </div>
@@ -39,17 +39,17 @@ const Work = () => {
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            DevBooks
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="" target='_blank'>
+                            <a href="https://devbooks-project.vercel.app" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-800 font-bold text-lg hover:text-black hover:bg-slate-300'>Abrir Projeto</button>
                             </a>
-                            <a href="" target='_blank'>
+                            <a href="https://github.com/renatorodriguess/DevBooks" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-800 font-bold text-lg hover:text-black hover:bg-slate-300'>Repositório</button>
                             </a>
-                            <div className='absolute mt-4 ml-9'>
-                            <span className='text-pink-600 font-extrabold '>React, Node, Next e Tailwind</span>
+                            <div className='absolute mt-4 ml-5'>
+                            <span className='text-pink-600 font-extrabold'>React, Typescript, Next e Tailwind</span>
                         </div>
                         </div>
                     </div>
@@ -59,13 +59,13 @@ const Work = () => {
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            DevBooks
+                            Image Gallery
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="https://dev-books-renatorodriguess.vercel.app" target='_blank'>
+                            <a href="https://imagegallery-project.vercel.app" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-800 font-bold text-lg hover:text-black hover:bg-slate-300'>Abrir Projeto</button>
                             </a>
-                            <a href="https://github.com/renatorodriguess/DevBooks" target='_blank'>
+                            <a href="https://github.com/renatorodriguess/image-gallery" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-800 font-bold text-lg hover:text-black hover:bg-slate-300'>Repositório</button>
                             </a>
                         </div>

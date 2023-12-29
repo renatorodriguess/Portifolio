@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'first-image': "url('assets/Instasany.png')" ,
-        'second-image': "url('assets/realestate.jpg')",
+        'second-image': "url('assets/Image-Gallery.png')",
         'third-image': "url('assets/DevBooks.png')",
       }
     },
