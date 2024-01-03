@@ -1,10 +1,8 @@
-import Image from "next/image";
-import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
     return (
       <div id="contact" className="mt-[-5%] w-full h-screen bg-[#0a192f] flex justify-center items-center p-4">
-        <form action="https://api.staticforms.xyz/submit" method="POST" className="flex flex-col max-w-[600px] w-full">
+        <div className="flex flex-col max-w-[600px] w-full">
           <div className="pb-8">
             <p className="text-5xl font-bold inline border-b-4 border-pink-600 text-gray-300">
               Contato
@@ -13,11 +11,10 @@ const Contact = () => {
               <div>
                 <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=renato072002@gmail.com" className="text-2xl flex items-center justify-center gap-3
                 text-pink-600 hover:text-pink-800">
-                  <MdEmail/>
                   renato072002@gmail.com</a>
               </div>
           </div>
-        </form>
+        </div>
       </div>
     );
   };

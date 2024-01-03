@@ -7,17 +7,20 @@ const About = () => {
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
             <p className='text-5xl font-bold inline border-b-4 border-pink-600'>
-              Sobre Mim
+              Sobre
             </p>
           </div>
-          <div></div>
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div  className='sm:text-right text-4xl font-bold'>
-              <p>Olá. Sou Renato Rodrigues prazer me conhecê-lo. Dê uma olhada em volta.</p>
+            <div  className='sm:text-right text-4xl font-bold '>
+              <p>Olá. Prazer me conhecê-lo. Dê uma olhada em volta.</p>
             </div>
             <div> 
-              <p>Desde a infância, minha paixão pela tecnologia foi alimentada pelos jogos, despertando muita curiosidade em saber como funcionavam. Essa fascinação guiou minha decisão de seguir o caminho da tecnologia, com especial interesse pela programação. Na qual, encontrei não apenas uma habilidade técnica, mas uma linguagens pela qual eu poderia dar vida às minhas ideias e solucionar desafios complexos. Hoje, cada linha de código representa não apenas um comando, mas uma expressão do meu entusiasmo em contribuir para o avanço constante do mundo digital.</p>  
+              <p> <span className="bg-pink-500 font-bold text-xl p-1 rounded-sm mr-1">M</span>e chamo Renato Rodrigues, tenho 21 anos e sou apaixonado desde criança por tecnologia, jogos e programação. Quando era mais jovem, fui movido pela pura curiosidade e pela esperança de criar meu próprio jogo, o que me levou a explorar a programação em Javascript. </p>
+              <br />
+              <p>Em 2022, decidi ingressar na faculdade de ADS para me aprimorar, na qual meus estudos em programação. Desta vez, focando em Javascript para a área de Desenvolvimento Frontend. Escolhi o Javascript devido a sua grande comunidade, enorme potencial de crescimento e sua grande adaptabilidade que se expande para a Web, Mobile e Backend, através de React e Node.</p>   
+              <br />
+              <p>Estou buscando minha primeira vaga onde possa fundir meu amor pelo código com a comunicação. Se você tem uma vaga que eu poderia gostar, vamos nos conectar!</p>
             </div>
           </div>
       </div>
