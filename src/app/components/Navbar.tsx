@@ -106,9 +106,9 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                    <a className='flex justify-between items-center w-full text-gray-300'
-                    href={'./CVRenato.pdf'}download>
-                        Curriculo <BsFillPersonLinesFill size={30}/>
+                    <a target='_blank' rel="noopener noreferrer" className='flex justify-between items-center w-full text-gray-300'
+                    href={'./CVRenato.pdf'}>
+                        Baixar CV <BsFillPersonLinesFill size={30}/>
                     </a>
                 </li>
             </ul>
