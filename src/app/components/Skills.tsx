@@ -3,7 +3,7 @@ import Image from 'next/image'
 import HTMLImg from '../assets/html.png'
 import JavaScriptImg from '../assets/javascript.png'
 import TailwindImg from '../assets/tailwind.png'
-import GitHubImg from '../assets/github.png'
+import GitImg from '../assets/git.png'
 import ReactImg from '../assets/react.png'
 import CSSImg from '../assets/css.png'
 import NextImg from '../assets/nextjs.png'
@@ -54,8 +54,8 @@ const Skills = () => {
               <p className='my-4'>TAILWIND</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-              <Image className='w-20 mx-auto' src={GitHubImg} alt='GITHUB Icon' />
-              <p className='my-4'>GITHUB</p>
+              <Image className='w-20 mx-auto' src={GitImg} alt='GIT Icon' />
+              <p className='my-4'>GIT</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
               <Image className='w-20 mx-auto' src={JestImg} alt='JEST Icon' />
