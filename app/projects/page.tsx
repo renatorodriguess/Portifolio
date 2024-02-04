@@ -1,12 +1,13 @@
 import React from 'react'
 import { PageIntroduction } from '../components/pages/projects/page-introduction'
-import { ProjectsList } from '../components/pages/projects/projects-list'
+import { ProjectList } from '../components/pages/projects/projects-list'
+
 
 export default function Projects() {
   return (
     <>
       <PageIntroduction />
-      <ProjectsList />
+      <ProjectList />
     </>
   )
 }
