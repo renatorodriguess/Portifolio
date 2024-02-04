@@ -2,7 +2,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 
 export const ContactForm = () => {
     return (
-        <section className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-950">
+        <section id="contact" className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-950">
             <div className="w-full max-w-[600px] mx-auto">
                 <div className="max-w-[1000px] w-full lg:text-center">
                     <div className="items-center text-center">
