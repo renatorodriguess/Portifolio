@@ -9,7 +9,6 @@ import { HomePageInfo } from "@/app/types/page-info"
 import { RichText } from "@/app/components/rich-text"
 
 
-
 const MOCK_CONTACTS = [
     {
         url: 'http://github.com/',
