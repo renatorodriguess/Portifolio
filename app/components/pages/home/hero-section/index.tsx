@@ -5,6 +5,7 @@ import { Button } from "@/app/components/button"
 import { TechBadge } from "@/app/components/tech-badge"
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb"
+import { HomePageInfo } from "@/app/types/page-info"
 
 
 const MOCK_CONTACTS = [
@@ -18,9 +19,11 @@ const MOCK_CONTACTS = [
     },
 ]
 
+type HomeSectionProps = {
+    homeInfo: HomePageInfo
+}
 
-
-export const HeroSection = () => {
+export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
     const handleContact = () => {
         const contactSection = document.querySelector('#contact');
         if (contactSection) {
