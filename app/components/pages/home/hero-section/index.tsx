@@ -4,33 +4,12 @@ import Image from "next/image"
 import { Button } from "@/app/components/button"
 import { TechBadge } from "@/app/components/tech-badge"
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import { TbBrandGithub, TbBrandLinkedin, TbBrandYoutube, TbBrandWhatsapp } from 'react-icons/tb'
 import { HomePageInfo } from "@/app/types/page-info"
 import { RichText } from "@/app/components/rich-tex"
+import { CMSIcon } from "@/app/components/cms-icon"
 
 
-const MOCK_CONTACTS = [
-    {
-        url: 'http://github.com/.br',
-        icon: < TbBrandGithub />
 
-    },
-    {
-        url: 'http://github.com/.br',
-        icon: < TbBrandLinkedin />
-
-    },
-    {
-        url: 'http://github.com/.br',
-        icon: < TbBrandYoutube />
-
-    },
-    {
-        url: 'http://github.com/.br',
-        icon: < TbBrandWhatsapp />
-
-    },
-]
 
 type HomeSectionProps = {
     homeInfo: HomePageInfo
@@ -56,8 +35,8 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                     </div>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-                        {Array.from({ length: 5 }).map((_, index) => (
-                            <TechBadge name="rewrwe" />
+                        {homeInfo.technologies.map((tech) => (
+                            <TechBadge name={tech.name}/>
                         ))}
                     </div>
 
@@ -68,14 +47,14 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                         </Button>
 
                         <div className="trext-gray-600 text-2xl flex items-center h-20">
-                            {MOCK_CONTACTS.map((contact, index) => (
+                            {homeInfo.socials.map((contact, index) => (
                                 <a
                                     key={index}
                                     href={contact.url}
                                     target="_blank"
                                     className="hover:text-gray-100 transition-colors"
                                 >
-                                    {contact.icon}
+                                    <CMSIcon icon={contact.iconSvg}/>
                                 </a>
                             ))}
                         </div>
@@ -85,7 +64,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                 <Image
                     width={420}
                     height={404}
-                    src="/images/profile-pic.png"
+                    src={homeInfo.profilePicture.url}
                     alt="Foto de Perfil"
                     className="w-[300px] h-[300px] lg:w-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
                 />
