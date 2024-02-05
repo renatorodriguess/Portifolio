@@ -6,6 +6,8 @@ import { TechBadge } from "@/app/components/tech-badge"
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb"
 import { HomePageInfo } from "@/app/types/page-info"
+import { RichText } from "@/app/components/rich-text"
+
 
 
 const MOCK_CONTACTS = [
@@ -39,7 +41,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                     <h2 className="text-4xl font-medium mt-2">Renato Rodrigues</h2>
 
                     <p className="text-gray-400 my-6 text-sm sm:text-base">
-                        Olá nome é
+                        <RichText content={homeInfo.introduction.raw}/>
                     </p>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
