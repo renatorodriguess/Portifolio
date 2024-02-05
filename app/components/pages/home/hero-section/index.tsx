@@ -4,22 +4,27 @@ import Image from "next/image"
 import { Button } from "@/app/components/button"
 import { TechBadge } from "@/app/components/tech-badge"
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import { HomePageInfo } from "@/app/types/page-info"
-import { RichText } from "@/app/components/rich-tex"
-import { CMSIcon } from "@/app/components/cms-icon"
+import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb"
+
+
+const MOCK_CONTACTS = [
+    {
+        url: 'http://github.com/',
+        icon: <TbBrandGithub />
+    },
+    {
+        url: 'http://github.com/',
+        icon: <TbBrandLinkedin />
+    },
+]
 
 
 
-
-type HomeSectionProps = {
-    homeInfo: HomePageInfo
-}
-
-export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
+export const HeroSection = () => {
     const handleContact = () => {
         const contactSection = document.querySelector('#contact');
-        if(contactSection) {
-            contactSection.scrollIntoView({behavior:'smooth'})
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' })
         }
     }
 
@@ -30,13 +35,13 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                     <p className="font-mono text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Renato Rodrigues</h2>
 
-                    <div className="text-gray-400 my-6 text-sm sm:text-base">
-                        <RichText content={homeInfo.introduction.raw}/>
-                    </div>
+                    <p className="text-gray-400 my-6 text-sm sm:text-base">
+                        Olá nome é
+                    </p>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-                        {homeInfo.technologies.map((tech) => (
-                            <TechBadge name={tech.name} key={tech.name}/>
+                        {Array.from({ length: 2 }).map((_, index) => (
+                            <TechBadge name="Nextjs" />
                         ))}
                     </div>
 
@@ -46,17 +51,18 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                             <HiArrowNarrowRight size={18} />
                         </Button>
 
-                        <div className="trext-gray-600 text-2xl flex items-center h-20">
-                            {homeInfo.socials.map((contact, index) => (
+                        <div className="text-gray-600 text-2xl flex items-center h-20">
+                            {MOCK_CONTACTS.map((content, index) => (
                                 <a
-                                    key={index}
-                                    href={contact.url}
+                                    href={content.url}
+                                    key={`contact-${index}`}
                                     target="_blank"
                                     className="hover:text-gray-100 transition-colors"
                                 >
-                                    <CMSIcon icon={contact.iconSvg}/>
+                                    {content.icon}
                                 </a>
                             ))}
+
                         </div>
                     </div>
                 </div>
@@ -64,7 +70,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                 <Image
                     width={420}
                     height={404}
-                    src={homeInfo.profilePicture.url}
+                    src=""
                     alt="Foto de Perfil"
                     className="w-[300px] h-[300px] lg:w-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
                 />
