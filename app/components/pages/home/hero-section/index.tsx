@@ -24,7 +24,7 @@ type HomeSectionProps = {
     homeInfo: HomePageInfo
 }
 
-export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
+export const HeroSection = () => {
     const handleContact = () => {
         const contactSection = document.querySelector('#contact');
         if (contactSection) {
@@ -39,9 +39,11 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                     <p className="font-mono text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Renato Rodrigues</h2>
 
-                    <div className="text-gray-400 my-6 text-sm sm:text-base">
-                        <RichText content={homeInfo.introduction.raw}/>
-                    </div>
+                    <p className="text-gray-400 my-6 text-sm sm:text-base">
+                        Olá, me chamo Renato Rodrigues e sou um Desenvolvedor Front-End em fase de aprendizado. Meu objetivo é me tornar um desenvolvedor completo, capaz de criar aplicações web do início ao fim. Sou apaixonado por jogos e tecnologia, e busco oportunidades de aprendizado, crescimento e inovação na área de desenvolvimento web.
+
+
+                    </p>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
                         {Array.from({ length: 1 }).map((_, index) => (
