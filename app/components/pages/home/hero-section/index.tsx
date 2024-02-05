@@ -5,8 +5,6 @@ import { Button } from "@/app/components/button"
 import { TechBadge } from "@/app/components/tech-badge"
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandYoutube, TbBrandWhatsapp } from 'react-icons/tb'
-import { HomePageInfo } from "@/app/types/page-info"
-import { RichText } from "@graphcms/rich-text-react-renderer"
 
 const MOCK_CONTACTS = [
     {
@@ -31,11 +29,7 @@ const MOCK_CONTACTS = [
     },
 ]
 
-type HomeSectionProps = {
-    homeInfo: HomePageInfo
-}
-
-export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
+export const HeroSection = () => {
     const handleContact = () => {
         const contactSection = document.querySelector('#contact');
         if(contactSection) {
@@ -50,9 +44,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                     <p className="font-mono text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Renato Rodrigues</h2>
 
-                    <p className="text-gray-400 my-6 text-sm sm:text-base">
-                        <RichText content={homeInfo.introduction.raw}/>
-                    </p>
+                    <p className="text-gray-400 my-6 text-sm sm:text-base">Olá, meu nome é Gabriel Borges e sou um desenvolvedor front-end apaixonado por tecnologia. Com mais de 2 anos de experiência. Meu objetivo é criar interfaces de usuário bonitas e funcionais, além de liderar equipes técnicas em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.</p>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
                         {Array.from({ length: 5 }).map((_, index) => (
