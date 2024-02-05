@@ -6,11 +6,8 @@ export const fetchHygraphQuery = async (query: string) => {
             'Accept': 'application/json',
             'Authorization': `Bearer ${process.env.HYGRAPH_TOKEN}`
         },
-        body: JSON.stringify({ query }),
-        next: {
-            revalidate: 60 * 60 * 24 // 24 hours
-        }
-    })
+        body: JSON.stringify({ query }) // Corrigido o envio do body
+    });
 
     const { data } = await response.json();
 
