@@ -1,9 +1,15 @@
+'use client'
+
 import { FaRegEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeUpAnimation } from "@/app/lib/animations";
 
 export const ContactForm = () => {
     return (
         <section id="contact" className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-950">
-            <div className="w-full max-w-[600px] mx-auto">
+            <motion.div className="w-full max-w-[600px] mx-auto"
+            {...fadeUpAnimation}
+            >
                 <div className="max-w-[1000px] w-full lg:text-center">
                     <div className="items-center text-center">
                         <p className="text-5xl lg:text-6xl font-bold lg:font-black inline border-b-4 border-emerald-600 text-gray-300">
@@ -18,7 +24,7 @@ export const ContactForm = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
