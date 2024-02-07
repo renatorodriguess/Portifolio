@@ -57,7 +57,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
                             <HiArrowNarrowRight size={18} />
                         </Button>
 
-                        <div className="text-gray-600 text-2xl flex items-center h-20">
+                        <div className="text-gray-600 text-3xl flex items-center h-20">
                             {homeInfo.socials.map((content, index) => (
                                 <a
                                     href={content.url}
