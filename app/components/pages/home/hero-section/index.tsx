@@ -4,21 +4,19 @@ import Image from "next/image"
 import { Button } from "@/app/components/button"
 import { TechBadge } from "@/app/components/tech-badge"
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb"
+import { HomePageInfo } from "@/app/types/page-info"
+import { RichText } from "@/app/components/rich-text"
+import { CMSIcon } from "@/app/components/cms-icon"
 
 
-const MOCK_CONTACTS = [
-    {
-        url: 'http://github.com/',
-        icon: <TbBrandGithub />
-    },
-    {
-        url: 'http://github.com/',
-        icon: <TbBrandLinkedin />
-    },
-]
 
-export const HeroSection = () => {
+
+type HomeSectionProps = {
+    homeInfo: HomePageInfo
+}
+
+
+export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
     const handleContact = () => {
         const contactSection = document.querySelector('#contact');
         if (contactSection) {
@@ -33,13 +31,13 @@ export const HeroSection = () => {
                     <p className="font-mono text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Renato Rodrigues</h2>
 
-                    <p className="text-gray-400 my-6 text-sm sm:text-base">
-                        Olá, me chamo Renato Rodrigues e sou um Desenvolvedor Front-End em fase de aprendizado. Meu objetivo é me tornar um desenvolvedor completo, capaz de criar aplicações web do início ao fim. Sou apaixonado por jogos e tecnologia, e busco oportunidades de aprendizado, crescimento e inovação na área de desenvolvimento web.
-                    </p>
+                    <div className="text-gray-400 my-6 text-sm sm:text-base">
+                        <RichText content={homeInfo.introduction.raw} />
+                    </div>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-                        {Array.from({ length: 4 }).map((_, index) => (
-                            <TechBadge name="Nextjs" />
+                        {homeInfo.technologies.map((tech) => (
+                            <TechBadge name={tech.name} key={tech.name} /> 
                         ))}
                     </div>
 
@@ -50,14 +48,14 @@ export const HeroSection = () => {
                         </Button>
 
                         <div className="text-gray-600 text-2xl flex items-center h-20">
-                            {MOCK_CONTACTS.map((content, index) => (
+                            {homeInfo.socials.map((content, index) => (
                                 <a
                                     href={content.url}
                                     key={`contact-${index}`}
                                     target="_blank"
                                     className="hover:text-gray-100 transition-colors"
                                 >
-                                    {content.icon}
+                                    <CMSIcon icon={content.iconSvg}/>
                                 </a>
                             ))}
 
@@ -68,7 +66,7 @@ export const HeroSection = () => {
                 <Image
                     width={420}
                     height={404}
-                    src=""
+                    src={homeInfo.profilePicture.url}
                     alt="Foto de Perfil"
                     className="w-[300px] h-[300px] lg:w-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
                 />

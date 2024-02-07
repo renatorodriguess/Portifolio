@@ -5,6 +5,19 @@ import Header from './components/header'
 import { ContactForm } from './components/contact-form'
 import { BackToTop } from './components/back-to-top'
 
+
+export const metadata = {
+  title: {
+    default: 'Home',
+    template: '%s | Renato'
+  },
+  icons: [
+    {
+      url: '/favicon.svg'
+    }
+  ]
+}
+
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
