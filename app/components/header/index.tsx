@@ -32,16 +32,16 @@ const Header = () => {
             <div className='container flex items-center justify-between'>
                 <Link href="/">
                     <Image
-                        width={58}
+                        width={100}
                         height={49}
-                        src="/images/logo.svg"
+                        src="/images/loogo.png"
                         alt='Logo'
                         className='hidden sm:block'
                     />
                 </Link>
 
 
-                <nav className='flex items-center gap-4 sm:gap-10'>
+                <nav className='flex items-center gap-4 sm:gap-10 text-sm'>
                     {NAV_ITEMS.map(item => (
                         <NavItem {...item} key={item.label} />
                     ))}
