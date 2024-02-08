@@ -41,7 +41,7 @@ const Header = () => {
                 </Link>
 
 
-                <nav className='flex items-center gap-4 sm:gap-10 text-sm'>
+                <nav className='flex items-center gap-4 sm:gap-10'>
                     {NAV_ITEMS.map(item => (
                         <NavItem {...item} key={item.label} />
                     ))}
