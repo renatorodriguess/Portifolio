@@ -21,7 +21,7 @@ export const ProjectList = ({ projects }: ProjectListProps) => {
                 {...fadeUpAnimation}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 >
-                    <Link href="/projects/space-y">
+                    <Link href={`/projects/${project.slug}`}>
                         <ProjectCard project={project} />
                     </Link>
                 </motion.div>
